@@ -1,0 +1,165 @@
+.wrapped {
+    width: 100%;
+    .top {
+        padding: 80px 0;
+        text-align: center;
+        color: #f9f4da;
+        opacity: 0.9;
+        figcaption {
+            font-size: 18px;
+            margin-top: 24px;
+        }
+    }
+
+    .middle {
+        background-color: #f9f4da;
+        padding: 80px 10%;
+        border-radius: 50px;
+        display: flex;
+        justify-content: space-between;
+        & > div:first-child {
+            width: 50%;
+            & > div:first-child {
+                color: #ed203d;
+                font-size: 72px;
+                font-weight: 900;
+                margin: 32px 0 40px;
+                // -webkit-text-stroke: 1px black;
+                // text-stroke: 4px black;
+            }
+            & > div:nth-child(2) {
+                font-size: 36px;
+                font-weight: 600;
+                margin-bottom: 40px;
+            }
+            & > div:nth-child(3) {
+                font-size: 24px;
+                margin-bottom: 40px;
+            }
+            & > div:last-child {
+                margin-top: 48px;
+                font-size: 24px;
+            }
+        }
+        & > div:last-child {
+            border: 3px solid black;
+            border-radius: 10px;
+            padding: 32px;
+            margin-top: 80px;
+            font-size: 20px;
+            width: 40%;
+            .item {
+                display: flex;
+                justify-content: space-between;
+                padding: 16px 0;
+                img {
+                    height: 28px;
+                    width: 32px;
+                    margin-right: 20px;
+                    display: none;
+                }
+
+                &:hover {
+                    background-color: #ed203d;
+                    img {
+                        display: inline;
+                    }
+                }
+            }
+
+            & > div:first-child {
+                font-size: 30px;
+                margin-bottom: 16px;
+            }
+            hr {
+                margin: 0;
+                border: 1px solid black;
+            }
+        }
+    }
+    .latest {
+        margin: 80px 0;
+        padding-top: 64px;
+        background: radial-gradient(4px 4px at 50% 50%, #0f0d0e 50%, transparent 50%) top / 40px 40px repeat,
+            radial-gradient(8px 8px at 50% 50%, rgba(255, 255, 255, 0.1) 50%, transparent 50%) top / 40px 40px repeat;
+        color: #f9f4da;
+        text-align: center;
+        .latestImg {
+            position: absolute;
+            top: 0;
+            right: 20%;
+            img {
+                width: 76px;
+                height: 67px;
+            }
+        }
+
+        & > div:first-child {
+            font-size: 72px;
+            line-height: 1;
+            position: relative;
+
+            color: #fcba28;
+            font-weight: 900;
+        }
+        & > div:nth-child(2) {
+            font-size: 30px;
+            margin: 16px 0 120px;
+        }
+        & > div:last-child {
+            display: flex;
+            gap: 15px;
+            width: 20%;
+            .card {
+                background-color: #7b5ea7;
+                padding-top: 32px;
+                text-align: start;
+                border-radius: 10px;
+                // text-align: center;
+
+                & > div:first-child {
+                    padding: 32px;
+
+                    & > div:first-child {
+                        height: 48px;
+                        width: 48px;
+                        background-color: #fcba28;
+                        border-radius: 50px;
+                        line-height: 48px;
+                        font-size: 20px;
+                        color: #231f20;
+                        font-weight: 700;
+                        box-shadow: -2px 1px 1px 3px #231f20;
+                        text-align: center;
+                    }
+                    & > div:nth-child(2) {
+                        font-size: 24px;
+                        margin-top: 32px;
+                        margin-bottom: 16px;
+                    }
+                    & > div:nth-child(3) {
+                        font-size: 18px;
+                        margin-top: 32px;
+                        margin-bottom: 16px;
+                    }
+                }
+                & > div:last-child {
+                    color: #231f20;
+                    display: flex;
+                    gap: 15px;
+                    background-color: #f9f4da;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    padding: 32px;
+                    .btnItem {
+                        background-color: #fcba28;
+                        border-radius: 30px;
+                        padding: 8px;
+                        font-size: 12px;
+                        box-shadow: -2px 3px 1px 1px #231f20;
+                    }
+                }
+            }
+        }
+    }
+}

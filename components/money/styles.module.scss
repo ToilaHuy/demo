@@ -1,0 +1,105 @@
+.wrapped {
+    background-color: #0ba95b;
+    width: 100%;
+    border-radius: 50px;
+    position: relative;
+    padding: 80px 80px 160px;
+    margin-bottom: 400px;
+    & > div:first-child {
+        color: #f9f4da;
+        display: flex;
+        & > div:first-child {
+            width: 60%;
+            & > div:first-child {
+                font-size: 60px;
+                color: #fcba28;
+                font-weight: 900;
+                margin-bottom: 48px;
+            }
+            & > div:nth-child(2) {
+                font-size: 36px;
+                margin-bottom: 48px;
+            }
+            ul {
+                font-size: 24px;
+                li {
+                    margin-bottom: 24px;
+                }
+            }
+            & > div:last-child {
+                font-size: 24px;
+            }
+        }
+        & > div:last-child {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            position: relative;
+            & > div:first-child {
+                img {
+                    width: 200px;
+                    height: 150px;
+                }
+            }
+            & > div:last-child {
+                .itemBlue {
+                    position: absolute;
+                    top: -40px;
+                    left: 50px;
+                }
+                .itemPink {
+                    position: absolute;
+                    bottom: -40px;
+                    left: 50px;
+                }
+                .itemPurple {
+                    top: -100px;
+                    right: 180px;
+
+                    position: absolute;
+                }
+                .itemRed {
+                    top: 50px;
+                    right: 40px;
+                    position: absolute;
+                }
+                .itemYellow {
+                    bottom: -100px;
+                    right: 180px;
+                    position: absolute;
+                }
+            }
+        }
+    }
+    & > div:last-child {
+        position: absolute;
+        bottom: -110px;
+        display: flex;
+        .listCard {
+            width: 450px;
+            padding: 32px;
+            font-size: 16px;
+
+            border-radius: 10px;
+            border: 2px solid #231f20;
+        }
+        & > div:first-child {
+            background-color: #ed203d;
+            transform: rotate(-16deg);
+            z-index: 1;
+        }
+        & > div:nth-child(2) {
+            background-color: #f38ba3;
+            transform: rotate(8deg);
+        }
+        & > div:nth-child(3) {
+            background-color: #fcba28;
+            transform: rotate(-12deg);
+        }
+        & > div:last-child {
+            background-color: #7b5ea7;
+            transform: rotate(11deg);
+        }
+    }
+}

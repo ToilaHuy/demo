@@ -1,0 +1,91 @@
+.wrapped {
+    min-height: 500px;
+    width: 100%;
+    background: radial-gradient(4px 4px at 50% 50%, #0f0d0e 50%, transparent 50%) top / 40px 40px repeat,
+        radial-gradient(8px 8px at 50% 50%, rgba(255, 255, 255, 0.1) 50%, transparent 50%) top / 40px 40px repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px;
+    position: relative;
+    .content {
+        color: #f9f4da;
+        text-align: center;
+        font-weight: 900;
+        height: 440px;
+        width: 700px;
+        background-color: #7b5ea7;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px;
+
+        .contentTitle {
+            font-size: 60px;
+            font-family: Paytone One, sans-serif;
+            line-height: 1;
+        }
+        .contentDes {
+            margin: 32px 0 26px;
+            font-size: 24px;
+            font-weight: 500;
+        }
+        .contentBtn {
+            background-color: #fcba28;
+            color: #000000;
+            border-radius: 50px;
+            padding: 16px 32px;
+            font-size: 16px;
+            font-weight: 900;
+        }
+    }
+    .imgTopLeft {
+        position: absolute;
+        top: 80px;
+        left: 120px;
+        img {
+            height: 126px;
+            width: 140px;
+        }
+    }
+    .imgBottomRight {
+        position: absolute;
+        bottom: 80px;
+        right: 120px;
+        img {
+            height: 126px;
+            width: 140px;
+        }
+    }
+    .contentTopRight {
+        position: absolute;
+        top: 80px;
+        right: 90px;
+        background-color: #f9f4da;
+        padding: 12px 20px;
+        text-align: center;
+        font-size: 16px;
+        border-radius: 20px;
+        & > div:first-child {
+            font-weight: 700;
+        }
+        .starContainer {
+            margin-top: 8px;
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+        }
+    }
+    .contentBottomLeft {
+        position: absolute;
+        bottom: 80px;
+        left: 90px;
+        background-color: #0ba95b;
+        padding: 12px 20px;
+        text-align: center;
+        font-size: 16px;
+        border-radius: 20px;
+    }
+}
